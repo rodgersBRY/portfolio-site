@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueScrollTo from 'vue-scrollto'
 import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
@@ -15,6 +16,8 @@ Vue.component('AboutPage', About)
 Vue.component('SkillsPage', Skills)
 Vue.component('Contact', Contact)
 Vue.component('Footer', Footer)
+
+Vue.use(VueScrollTo)
 
 new Vue({
   router,

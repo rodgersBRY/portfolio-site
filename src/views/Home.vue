@@ -1,7 +1,7 @@
 <template>
-  <div class="nav-bar">
-    <header>
-      <v-toolbar flat color="red lighten-2" class="nav-bar" light>
+  <div class="home">
+    <header class="nav-bar">
+      <v-toolbar flat color="red lighten-2" light style="position: fixed; width: 100%;z-index: 1000;">
         <v-toolbar-title>
             <v-img :src="require('../assets/logo1.png')" alt="logo" max-width="200" max-height="100"></v-img>
         </v-toolbar-title>
@@ -9,19 +9,19 @@
         <v-spacer />
 
         <div class="nav-links">
-            <router-link tag="li" active-class="active" to="#home" exact>Home</router-link>
-            <router-link tag="li" active-class="active" :to="{path: '#about'}">About Me</router-link>
-            <router-link tag="li" active-class="active">My Skills</router-link>
-            <router-link tag="li" active-class="active">My Portfolio</router-link>
-            <router-link tag="li" active-class="active">Experience</router-link>
-            <router-link tag="li" active-class="active">Contacts</router-link>
+            <router-link tag="li" active-class="active" to="#home" v-scroll-to="'#home'">Home</router-link>
+            <router-link tag="li" active-class="active" to="#about" v-scroll-to="'#about'">About Me</router-link>
+            <router-link tag="li" active-class="active" to="#skills" v-scroll-to="'#skills'">My Skills</router-link>
+            <router-link tag="li" active-class="active" to="#portfolio" v-scroll-to="'#contact'">My Portfolio</router-link>
+            <router-link tag="li" active-class="active" to="#experience" v-scroll-to="'#contact'">Experience</router-link>
+            <router-link tag="li" active-class="active" to="#contacts" v-scroll-to="'#contact'">Contacts</router-link>
         </div>
       </v-toolbar>
     </header>
 
     <main>
       <!-- image + text -->
-      <header>
+      <header id="home">
         <v-img width="100%" height="700" :src="require('../assets/header.jpg')"></v-img>
       </header>
 
@@ -77,7 +77,6 @@ export default {
 </script>
 
 <style scoped>
-
 .nav-links {
     margin-right: 4rem;
 }

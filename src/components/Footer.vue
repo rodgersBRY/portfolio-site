@@ -1,16 +1,16 @@
 <template>
     <footer class="footer">
         <v-layout row justify-space-around class="footer-links">
-            <v-btn icon>
+            <v-btn icon target="_blank" rel="noopener noreferrer">
                 <i class="bx bxl-instagram bx-md icons"></i>
             </v-btn>
-            <v-btn icon>
+            <v-btn icon target="_blank" rel="noopener noreferrer">
                 <i class="bx bxl-facebook bx-md icons"></i>
             </v-btn>
-            <v-btn icon>
+            <v-btn icon href="https://www.linkedin.com/in/brian-mawira/" target="_blank" rel="noopener noreferrer">
                 <i class="bx bxl-linkedin bx-md icons"></i>
             </v-btn>
-            <v-btn icon>
+            <v-btn icon href="https://github.com/RodgersX" target="_blank" rel="noopener noreferrer">
                 <i class="bx bxl-github bx-md icons"></i>
             </v-btn>
         </v-layout>
