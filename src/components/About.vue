@@ -2,7 +2,7 @@
   <div class="about">
     <header class="text-center">
       <h1>I am Mawira, a Web Designer & Developer</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Life is too short for ordinary apps.</p>
     </header>
     <section class="cards">
       <v-layout row wrap justify-center>
@@ -17,8 +17,9 @@
           <v-card-title>
             {{ sk.title }}
           </v-card-title>
-          <v-card-text class="grey lighten-2 pa-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magni
-            ipsa culpa recusandae eum impedit ab veniam neque.</v-card-text>
+          <v-card-text class="grey lighten-2 pa-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia expedita illo explicabo id.
+          </v-card-text>
         </v-card>
       </v-layout>
     </section>

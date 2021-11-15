@@ -2,7 +2,7 @@
     <section>
         <header class="text-center">
             <h1>Let's Keep In Touch!</h1>
-            <p>Reach out and let me help you reach out to the millions of online users.</p>
+            <p>Let all your ideas bloom. Then build the best app for your idea!</p>
         </header>
         
         <form>

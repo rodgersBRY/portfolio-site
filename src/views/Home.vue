@@ -76,14 +76,14 @@
       </header>
 
       <section class="ux-geek">
-        <h1>I Create Beautiful Responsive Websitss, Yes I am a UX Geek</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit
-          dicta voluptatem magni laudantium corrupti consequatur repudiandae.
-          Libero soluta incidunt deleniti minus aspernatur ex perferendis
-          laborum ea, maxime, molestias tempore temporibus magni minima,
-          adipisci quibusdam? Eos, facilis rem amet molestiae impedit voluptatum
-          distinctio sequi consequatur ducimus consectetur at quisquam repellat.
+        <h1>I Create Beautiful Responsive Websitss, Yes I am a Geek</h1>
+        <p class="title grey--text">
+          Hello, My name is Brian Mawira. I am a Freelance Web Developer based
+          in Nairobi, Kenya. Highly experienced in developing websites and web
+          applications. I work remotely on projects for clients all over the
+          country. <br />
+          I have a diverse set of skills ranging from design to HTML + CSS +
+          Javascript all the way to python and API development.
         </p>
       </section>
 
@@ -157,7 +157,7 @@ export default {
 }
 
 .ux-geek {
-  width: 70%;
+  width: 50%;
   margin: 5rem auto;
   text-align: center;
 }

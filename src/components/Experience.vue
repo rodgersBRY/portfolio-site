@@ -2,7 +2,7 @@
   <section class="timeline-section">
       <header class="text-center">
             <h1>Experience and Accolades</h1>
-            <p>Learning is a never ending chain. Strive to get better</p>
+            <p>Put your creativity on the development highway</p>
         </header>
     <v-timeline :reverse="reverse">
       <v-timeline-item v-for="(data, i) in work_data" :key="i" :color="data.color">

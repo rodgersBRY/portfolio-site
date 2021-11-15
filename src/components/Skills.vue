@@ -2,7 +2,7 @@
     <section class="skills">
         <header class="text-center">
             <h1>My Skills</h1>
-            <p>Skills gained throughout my work environment and my time in school</p>
+            <p>Create, curate, teach. That's the way we code.</p>
         </header>
 
         <v-layout justify-space-around class="pa-4">
