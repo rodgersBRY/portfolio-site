@@ -113,7 +113,9 @@
         <Experience />
       </div>
 
-      <div id="portfolio" class="portfolio grey lighten-3"></div>
+      <div id="portfolio" class="portfolio">
+        <h1>My Portfolio</h1>
+      </div>
 
       <div id="contact" class="contact grey lighten-3">
         <Contact />

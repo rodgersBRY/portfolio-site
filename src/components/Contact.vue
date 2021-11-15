@@ -2,7 +2,7 @@
     <section>
         <header class="text-center">
             <h1>Let's Keep In Touch!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Reach out and let me help you reach out to the millions of online users.</p>
         </header>
         
         <form>
@@ -20,10 +20,10 @@
                 </section>
                 <section class="location">
                     <p class="headline">Address:</p>
-                    <p class="subtitle">Mawira Inc.</p>
-                    <p class="subtitle">134 Stilla. Tae, 414515</p>
+                    <p class="subtitle">Mawira Corp.</p>
+                    <p class="subtitle">728 Nkubu, Meru. 60 200</p>
                     <p class="headline mt-2">Phone:</p>
-                    <p class="subtitle">+254 712413243</p>
+                    <p class="subtitle">(+254) - 712 - 413 - 243</p>
                 </section>
             </v-layout>
         </form>
