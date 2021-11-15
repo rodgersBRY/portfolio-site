@@ -9,6 +9,7 @@ import About from './components/About.vue'
 import Skills from './components/Skills.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
+import Experience from './components/Experience.vue'
 
 Vue.config.productionTip = false
 
@@ -16,6 +17,7 @@ Vue.component('AboutPage', About)
 Vue.component('SkillsPage', Skills)
 Vue.component('Contact', Contact)
 Vue.component('Footer', Footer)
+Vue.component('Experience', Experience)
 
 Vue.use(VueScrollTo)
 
