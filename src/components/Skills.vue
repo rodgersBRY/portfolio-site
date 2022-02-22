@@ -17,10 +17,10 @@
         <div class="skill-bars">
           <skill-bar :value="90" skill-name="HTML5/CSS3" />
           <skill-bar :value="90" skill-name="JavaScript" />
-          <skill-bar :value="60" skill-name="NuxtJS" />
-          <skill-bar :value="80" skill-name="VueJS" />
-          <skill-bar :value="50" skill-name="Python" />
-          <skill-bar :value="70" skill-name="Flutter & Dart" />
+          <skill-bar :value="90" skill-name="VueJS" />
+          <skill-bar :value="80" skill-name="Flutter & Dart" />
+          <skill-bar :value="60" skill-name="Python" />
+          <skill-bar :value="40" skill-name="NuxtJS" />
         </div>
       </section>
       <section class="design">
