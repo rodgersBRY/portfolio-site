@@ -76,14 +76,14 @@
       </header>
 
       <section class="ux-geek">
-        <h1>I Create Beautiful Responsive Websitss, Yes I am a Geek</h1>
+        <h1>I use Technology to build solutions, Yes I am a Geek</h1>
         <p class="title grey--text">
-          Hello, My name is Brian Mawira. I am a Freelance Web Developer based
+          Hello, My name is Brian Mawira. I am a Software Engineer based
           in Nairobi, Kenya. Highly experienced in developing websites and web
-          applications. I work remotely on projects for clients all over the
+          applications as well as mobile applications. I work remotely on projects for clients all over the
           country. <br />
-          I have a diverse set of skills ranging from design to HTML + CSS +
-          Javascript all the way to python and API development.
+          I have a diverse set of skills ranging from HTML + CSS +
+          Javascript all the way to python and server-side development.
         </p>
       </section>
 
