@@ -74,6 +74,13 @@ export default {
 </script>
 
 <style scoped>
+header h1 {
+  font-family: "Aboreto", cursive;
+}
+
+header p {
+  font-family:"Silkscreen", cursive ;
+}
 .timeline-section {
   width: 50%;
   margin: 0 auto;

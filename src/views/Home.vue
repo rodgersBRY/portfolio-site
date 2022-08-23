@@ -43,21 +43,22 @@
           <router-link
             tag="li"
             active-class="active"
-            to="#portfolio"
-            v-scroll-to="'#contact'"
-            >My Portfolio</router-link
-          >
-          <router-link
-            tag="li"
-            active-class="active"
             to="#experience"
-            v-scroll-to="'#contact'"
+            v-scroll-to="'#experience'"
             >Experience</router-link
           >
           <router-link
             tag="li"
             active-class="active"
-            to="#contacts"
+            to="#portfolio"
+            v-scroll-to="'#portfolio'"
+            >My Portfolio</router-link
+          >
+          
+          <router-link
+            tag="li"
+            active-class="active"
+            to="#contact"
             v-scroll-to="'#contact'"
             >Contacts</router-link
           >
@@ -145,8 +146,10 @@ export default {
 
 .nav-links li {
   display: inline-block;
-  color: rgb(223, 215, 215);
+  color: rgb(129, 128, 128);
   padding: 20px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
   margin: 0 15px;
 }
 

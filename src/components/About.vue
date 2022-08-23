@@ -5,21 +5,25 @@
       <p>Life is too short for ordinary apps.</p>
     </header>
     <section class="cards">
-      <v-layout row wrap justify-center>
+      <v-layout row justify-space-around>
         <v-card
           flat
           width="350"
+          height="200"
           color="white lighten-2"
-          class="mx-7 my-4 text-center"
+          class="mx-4 my-10 text-center"
           v-for="(sk, i) in skills"
           :key="i"
         >
-          <v-icon size="200" :color="sk.color">{{ sk.img }}</v-icon>
-          <v-card-title>
-            {{ sk.title }}
-          </v-card-title>
+          <img
+            v-if="sk.image"
+            :src="sk.image"
+            alt="responsive design"
+            width="100%"
+          >
+          <v-icon v-else size="200" :color="sk.color">{{ sk.img }}</v-icon>
           <v-card-text class="grey lighten-2 pa-5">
-            {{ sk.desc }}
+            {{ sk.title }}
           </v-card-text>
         </v-card>
       </v-layout>
@@ -33,6 +37,7 @@ export default {
     return {
       skills: [
         {
+          image: require("@/assets/responsive.png"),
           title: "Responsive Design",
           img: "mdi-desktop-mac",
           color: "blue darken-3",
@@ -64,8 +69,6 @@ export default {
           title: "Python",
           img: "mdi-language-python",
           color: "yellow darken-2",
-          desc:
-            "Develop backend applications with Flask, a Python-based framework that makes it easy to develop efficient and redeable server-side code",
         },
       ],
     };
@@ -76,5 +79,13 @@ export default {
 <style scoped>
 .cards {
   margin-top: 4rem;
+}
+
+header h1 {
+  font-family: "Aboreto", cursive;
+}
+
+header p {
+  font-family:"Silkscreen", cursive ;
 }
 </style>

@@ -68,4 +68,12 @@ export default {
 .design {
   width: 40%;
 }
+
+header :first-child {
+  font-family: "Aboreto", cursive;
+}
+
+header p {
+  font-family: "Silkscreen", cursive;
+}
 </style>
