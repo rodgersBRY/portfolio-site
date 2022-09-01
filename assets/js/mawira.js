@@ -13,94 +13,94 @@
 */
 
 // load the NewsApi on News section
-// const wrapContainer = document.getElementById("news");
+const wrapContainer = document.getElementById("news");
 
-// const container = document.createElement("div");
-// container.setAttribute("class", "container");
+const container = document.createElement("div");
+container.setAttribute("class", "container");
 
-// wrapContainer.appendChild(container);
+wrapContainer.appendChild(container);
 
-// var request = new XMLHttpRequest();
+var request = new XMLHttpRequest();
 
-// request.open(
-//   "GET",
-//   "https://newsapi.org/v2/top-headlines?country=us&pageSize=4&category=business&apiKey=e3a1cbc95a8f4188ba2c73215fc788b8",
-//   true
-// );
+request.open(
+  "GET",
+  "https://news-api-request.vercel.app/news",
+  true
+);
 
-// request.onload = function () {
-//   // Begin accessing JSON data here
-//   var data = JSON.parse(this.response);
+request.onload = function () {
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response);
 
-//   const newsContainer = document.createElement("div");
-//   newsContainer.setAttribute("class", "container");
+  const newsContainer = document.createElement("div");
+  newsContainer.setAttribute("class", "container");
 
-//   const h2 = document.createElement("h2");
-//   h2.setAttribute("class", "mb-5 pb-4");
-//   h2.textContent = "Top ";
+  const h2 = document.createElement("h2");
+  h2.setAttribute("class", "mb-5 pb-4");
+  h2.textContent = "Top ";
 
-//   const span = document.createElement("span");
-//   span.setAttribute("class", "text-danger");
-//   span.textContent = "News";
+  const span = document.createElement("span");
+  span.setAttribute("class", "text-danger");
+  span.textContent = "News";
 
-//   const row = document.createElement("row");
-//   row.setAttribute("class", "row");
+  const row = document.createElement("row");
+  row.setAttribute("class", "row");
 
-//   container.appendChild(newsContainer);
-//   newsContainer.appendChild(h2);
-//   h2.appendChild(span);
-//   newsContainer.appendChild(row);
+  container.appendChild(newsContainer);
+  newsContainer.appendChild(h2);
+  h2.appendChild(span);
+  newsContainer.appendChild(row);
 
-//   if (request.status >= 200 && request.status < 400) {
-//     data.articles.forEach((news) => {
-//       console.log(news);
+  if (request.status >= 200 && request.status < 400) {
+    data.articles.forEach((news) => {
+      console.log(news);
 
-//       const blogCard = document.createElement("div");
-//       blogCard.setAttribute("class", "blog-card");
+      const blogCard = document.createElement("div");
+      blogCard.setAttribute("class", "blog-card");
 
-//       const imgHolder = document.createElement("div");
-//       imgHolder.setAttribute("class", "img-holder");
+      const imgHolder = document.createElement("div");
+      imgHolder.setAttribute("class", "img-holder");
 
-//       const img = document.createElement("img");
-//       img.src = news.urlToImage;
-//       img.alt = news.url;
+      const img = document.createElement("img");
+      img.src = news.urlToImage;
+      img.alt = news.url;
 
-//       const contentHolder = document.createElement("div");
-//       contentHolder.setAttribute("class", "content-holder");
+      const contentHolder = document.createElement("div");
+      contentHolder.setAttribute("class", "content-holder");
 
-//       const h6 = document.createElement("h6");
-//       h6.setAttribute("class", "title");
-//       h6.textContent = news.title;
+      const h6 = document.createElement("h6");
+      h6.setAttribute("class", "title");
+      h6.textContent = news.title;
 
-//       const sourceText = document.createElement("p");
-//       sourceText.setAttribute("class", "post-details");
+      const sourceText = document.createElement("p");
+      sourceText.setAttribute("class", "post-details");
 
-//       const sourceTag = document.createElement("a");
-//       sourceTag.href = "";
-//       sourceTag.textContent = `By: ${news.source.name}`;
+      const sourceTag = document.createElement("a");
+      sourceTag.href = "";
+      sourceTag.textContent = `By: ${news.source.name}`;
 
-//       const detailsText = document.createElement("p");
-//       detailsText.textContent = news.description;
+      const detailsText = document.createElement("p");
+      detailsText.textContent = news.description;
 
-//       const content = document.createElement("p");
-//       content.textContent = news.content;
+      const content = document.createElement("p");
+      content.textContent = news.content;
 
-//       row.appendChild(blogCard);
-//       blogCard.appendChild(imgHolder);
-//       imgHolder.appendChild(img);
-//       blogCard.appendChild(contentHolder);
-//       contentHolder.appendChild(h6);
-//       contentHolder.appendChild(sourceText);
-//       sourceText.appendChild(sourceTag);
-//       contentHolder.appendChild(detailsText);
-//       contentHolder.appendChild(content);
-//     });
-//   } else {
-//     console.log("error");
-//   }
-// };
+      row.appendChild(blogCard);
+      blogCard.appendChild(imgHolder);
+      imgHolder.appendChild(img);
+      blogCard.appendChild(contentHolder);
+      contentHolder.appendChild(h6);
+      contentHolder.appendChild(sourceText);
+      sourceText.appendChild(sourceTag);
+      contentHolder.appendChild(detailsText);
+      contentHolder.appendChild(content);
+    });
+  } else {
+    console.log("error");
+  }
+};
 
-// request.send();
+request.send();
 
 // smooth scroll
 $(document).ready(function () {
