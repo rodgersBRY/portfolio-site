@@ -36,10 +36,12 @@ request.onload = function () {
   newsContainer.setAttribute("class", "container");
 
   const h2 = document.createElement("h2");
-  h2.setAttribute("class", "mb-5");
+  h2.setAttribute("class", "mb-5 pb-4");
+  h2.textContent = "Top ";
 
   const span = document.createElement("span");
   span.setAttribute("class", "text-danger");
+  span.textContent = "News";
 
   const row = document.createElement("row");
   row.setAttribute("class", "row");
