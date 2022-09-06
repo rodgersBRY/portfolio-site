@@ -22,13 +22,16 @@ wrapContainer.appendChild(container);
 
 var request = new XMLHttpRequest();
 
-request.open(
-  "GET",
-  "https://news-api-request.vercel.app/news",
-  true
+request.open("GET", "https://news-api-request.vercel.app/news", true);
+
+request.setRequestHeader(
+  "Access-Control-Allow-Origin",
+  "https://localhost:4000"
 );
 
-request.onload = function () {
+const api_url = "https://news-api-request.vercel.app/news";
+
+request.onload = async function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
 
@@ -53,8 +56,6 @@ request.onload = function () {
 
   if (request.status >= 200 && request.status < 400) {
     data.articles.forEach((news) => {
-      console.log(news);
-
       const blogCard = document.createElement("div");
       blogCard.setAttribute("class", "blog-card");
 
